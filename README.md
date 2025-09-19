@@ -14,6 +14,8 @@ winget install --id Microsoft.PowerShell --source winget
 
 #GIT
 winget install --id Git.Git -e --source winget
+#git config --global user.email sinuIsiklik@email.com (githubi konto)
+#git config --global user.name "Eesnimi Perenimi"
 
 #Notepad++
 winget install -e --id Notepad++.Notepad++
