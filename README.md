@@ -8,6 +8,7 @@ Clientless VPN (Kehtna) - gp.kehtnakhk.ee
 
 Käsud
 ```
+#LAB masina tarkvara
 #Powershell
 winget install --id Microsoft.PowerShell --source winget
 
