@@ -1,0 +1,41 @@
+Andmete omadused
+CIA = Confidentiality (andmed on hoitud privaatsetena ja kaitstuna), Integrity (Andmed on kaitstud volitamata muutmise eest), Availability (Andmed on kättesaadavad neile kel ja kui vaja)
+Intsident = tõeline või arvatav, soovimatu või ootamatu, loomult kuridetelik või mitte, infoturvarike või sündmus või nende sari, mis võib kahjustada äritegevust või ähvardada teabe turvalisust. 
+Rünne = motivatsion (eesmärk) + meetod + nõrkus
+Oht = Soovimatu sündmuse võimalik esinemine, mis võib kahjustada organisatsiooni tegevust
+
+Näiteks:
+  Süsteemi(de) nakatumine luna- või pahavaraga
+  Süsteemi volitamata kasutamine
+  Teenusetõkestusrünnak
+  Veebilehe näostamine
+  Andmete vargus
+
+Ohumärgid mis viitavad intsidendi toimumisele tulevikus
+  Süsteemide skanneerimine
+  Vestlused darkwebi foorumites
+  Uute turvanõrkuste avalikustamine
+
+Indikaatorid mis viitavad, et intsident on toimunud või toimumas
+  Kasutajate pöördumised
+  Süsteemide ebatavaline käitumine (ressursikasutus, ebastabiilsus)
+  Suurenenud võrguliikluse mahud
+  Kahtlased võrguühendused
+  Tulemüüri sessioonitabeli täitumine
+
+Ohusubjekt (Threat Actor)
+  Skriptinagad (script kiddies)
+  Kinnisründeoht (APT Advanced Persistent Threat)
+  Häktivism
+  Siseringioht (insider threat)
+
+Intsidendi kulu koosneb otsestest ja kaudsetest kahjudest
+  Otsesed
+    Tegevusseisak
+    Rahaline kahju (lunaraha)
+    Juriidilised ja seadusandlikud probleemid (NIS2, GDPR trahvid)
+    Intsidendi menetluse kulud
+  Kaudsed
+    Andmete konfidentsiaalsuse, terviklikuse ja käideldavuse kadu
+    Mainekahju
+    Klientide usalduse kadu
