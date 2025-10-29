@@ -1,3 +1,8 @@
+Lingid:
+  https://www.unifiedkillchain.com/assets/The-Unified-Kill-Chain.pdf
+  https://attack.mitre.org/
+  https://eits.ria.ee/et/versioon/2024/eits-poohidokumendid/etalonturbe-kataloog/der-avastamine-ja-reageerimine/der1-turvaintsidentide-avastamine/3-meetmed
+
 Andmete omadused
 CIA = Confidentiality (andmed on hoitud privaatsetena ja kaitstuna), Integrity (Andmed on kaitstud volitamata muutmise eest), Availability (Andmed on kättesaadavad neile kel ja kui vaja)
 Intsident = tõeline või arvatav, soovimatu või ootamatu, loomult kuridetelik või mitte, infoturvarike või sündmus või nende sari, mis võib kahjustada äritegevust või ähvardada teabe turvalisust. 
@@ -39,3 +44,33 @@ Intsidendi kulu koosneb otsestest ja kaudsetest kahjudest
     Andmete konfidentsiaalsuse, terviklikuse ja käideldavuse kadu
     Mainekahju
     Klientide usalduse kadu
+
+Ründaja saab infot näiteks töökuulutuste kaudu
+Kasutatakse õngitsuskirju
+
+Intsidendihaldus = Selgelt defineeritud protseduuride kogum intsidentide käsitlemiseks arvuti- ja võrgusüsteemides
+  Aidata organisatsiooni kiirelt ja effektiivselt ning minimaalsete kahjudega taastada süsteemide talituspidevus
+  Minimiseerida võimalikud kahjud, mis võivad tekkida andmete vargusest või kaost ning kriitiliste süsteemide talituspidevuse katkemisest
+  Viia ellu süstemaatiline vastutegevus järgides valdkonna parimaid praktikaid
+  Vältida sarnaste intsidentide kordumist tulevikus
+  Aidata organisatsioonil taaskaalustada turbenõudeid finantskulutustega
+  Täita regulatiivseid nõudeid (NIS2, EITS, GDPR, ISO vms)
+
+PICERL = Intsidendi lahendamise protsess
+DAIR = Dynamic approach to incident response
+
+Regulatsioonid
+  NIST SP800-61R3
+    Incident Responce Recommandations and Considerations for Cybersecurity Risk Management
+  E-ITS - DER (https://eits.ria.ee/et/versioon/2024/eits-poohidokumendid/etalonturbe-kataloog/der-avastamine-ja-reageerimine/der1-turvaintsidentide-avastamine/3-meetmed)
+    Avastamine ja reageerimine
+    DER.1 Turvaintsidentide lahendamine
+    DER
+  ISO 27035
+    Information Security Indicent Management
+
+Üldpõhimõtted
+  Intsidendi lahendamise käigus tuleb arvestada organisatsiooni väärtusahela kaitset. Intsidendi lahendamise eesmärgiks on esmajoones vältida ründe levimist ärikriitilistesse süsteemidesse või ärikriitiliste süsteemide talituspidevuse taastamine.
+    Ärikriitiliste teenuste sulgemine tuleb viia läbi kaalutletult ning kooskõlastatult ettevõtte juhtkonnaga.
+  Intsidendi kommunikatsioon väliste osapooltega peab olema kaalutletud ning kooskõlastatud organisatsiooni kommunikatsioonijuhiga.
+  Lisaks intsidendi mõju kiirele piiritlemisele, on esmajärjekorras oluline teha kindlaks võimalik andmeleke ja selle ulatus, kuna andmete lekkimine võib põhjustada 
