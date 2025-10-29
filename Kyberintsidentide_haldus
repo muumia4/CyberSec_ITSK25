@@ -2,6 +2,10 @@ Lingid:
   https://www.unifiedkillchain.com/assets/The-Unified-Kill-Chain.pdf
   https://attack.mitre.org/
   https://eits.ria.ee/et/versioon/2024/eits-poohidokumendid/etalonturbe-kataloog/der-avastamine-ja-reageerimine/der1-turvaintsidentide-avastamine/3-meetmed
+  https://github.com/cyb3rfox/Aurora-Incident-Response
+  https://github.com/swannman/ircapabilities
+  https://www.vic.gov.au/sites/default/files/2024-10/Cyber-Security-Incident-Management-Plan.pdf (Enamasti overkill aga sealt saab spikerdada)
+  https://learn.cisecurity.org/benchmarks
 
 Andmete omadused
 CIA = Confidentiality (andmed on hoitud privaatsetena ja kaitstuna), Integrity (Andmed on kaitstud volitamata muutmise eest), Availability (Andmed on kättesaadavad neile kel ja kui vaja)
@@ -73,4 +77,80 @@ Regulatsioonid
   Intsidendi lahendamise käigus tuleb arvestada organisatsiooni väärtusahela kaitset. Intsidendi lahendamise eesmärgiks on esmajoones vältida ründe levimist ärikriitilistesse süsteemidesse või ärikriitiliste süsteemide talituspidevuse taastamine.
     Ärikriitiliste teenuste sulgemine tuleb viia läbi kaalutletult ning kooskõlastatult ettevõtte juhtkonnaga.
   Intsidendi kommunikatsioon väliste osapooltega peab olema kaalutletud ning kooskõlastatud organisatsiooni kommunikatsioonijuhiga.
-  Lisaks intsidendi mõju kiirele piiritlemisele, on esmajärjekorras oluline teha kindlaks võimalik andmeleke ja selle ulatus, kuna andmete lekkimine võib põhjustada 
+  Lisaks intsidendi mõju kiirele piiritlemisele, on esmajärjekorras oluline teha kindlaks võimalik andmeleke ja selle ulatus, kuna andmete lekkimine võib põhjustada ...?
+
+Intsidendi eduka lahendamise eelduseks on korralik ettevalmistus mis hõlmab:
+  Poliitika ja plaani väljatöötamisega
+  Protseduuride väljatöötamist
+  Töövahendite ettevalmistust, testimist ja koolitusi
+  Ennetavate ja tuvastavate tehnoloogiate juurutamist
+
+Intsidendi käsitlemise plaan
+  Joondatud asutuse turvapoliitkaga
+  Testitud õppuse käigus
+  Joondatud asutuse tegevuskeskkonnaga, riskide ja kriisiplaaniga
+
+Tehnoloogiad ja dokumentatsioon
+  Logiserver/SIEM koos analüütikareeglitega, et koguda ja edastada logisid
+  IDS/IPS/NDR koos vajaliku riistvaraga
+  Puhtad süsteemitõmmised (kuldpildid) ning tarkvaratõmmiste masspaigalduseks
+  Lühiteatmelehed (spikrid) töövahendite kasutamiseks
+  Kommunikatsiooni plaanid ja juhised intsidendi ajal suhtluse korraldamiseks
+  Intsidendi dokumentatsiooni põhjad
+  Juhtkonna aruande põhjad
+  Pressiteate põhi
+  Arhidektuuri ja võrguskeemid
+
+Tehnoloogiad
+  SIEM
+    Security Onion
+    Wazuh
+    ELK
+    QRadar
+    Graylog
+  NDR/IDS
+    Security Onion
+    Zeek
+    Suricata
+  EDR Endpoint Detection and Response
+    Sysmon
+    Security Onion
+    Wazuh
+    OpenEDR
+Turvaseirekeskus (SOC)
+
+Tuvastamine
+  Sündmused mis osutavad võimalikule intsidendile
+    SIEM või Logisüsteemi teavitus
+    Viirusetõjre teavitus
+    Lõppkasutaja pöördumine
+    Välise osapoole (CERT Eesti või ISP) pöördumine
+    Lunaraha nõue seadmes
+    Jne
+  Kas tegemist on intsidengiga või mitte pole alati koheselt selge
+  Kui palju süsteeme on mõjutatud?
+  Kas kriitilised süsteemid mõjutatud?
+  Kas kriitilised andmed mõjutatud?
+  Kas on mõju organisatsiooni talituspidevusele?
+  Kas kaasneb SLA-de või seaduse rikkumine?
+  Mis tüüpi ründega tegu?
+  Üks kriitiline süsteem > mitu ebaolulist
+
+Meeskond
+  Intsidendi juht - igale intsidendile määratakse intsidendi juuht tagamaks intsidendi organiseeritud ja kordineeritud lahendamise
+  Tehniline
+    Turvaanalüütikud
+    Süsteemiadministraatorid
+    IT tugi
+    Turbeinsenerid
+    Küberkriminalistika ekspert
+  Äri
+    Juhtkonna esindaja
+    Infoturbejuht
+    Jurist
+    Kommunikatsioonijuht
+    Peronalijuht
+
+Analüüs
+  Analüüsi faasis kogutakse vajalikud asitõendid edasiseks lahendamiseks. Eesmärgiks on tuvastada ulatus ja mõju ning juurpõhjus
+  Analüüsi faas peab olema teostatud piisava põhjalikusega enne intsidendi käsitlemise järgmisse faasi minekut
