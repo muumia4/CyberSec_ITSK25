@@ -154,3 +154,38 @@ Meeskond
 Analüüs
   Analüüsi faasis kogutakse vajalikud asitõendid edasiseks lahendamiseks. Eesmärgiks on tuvastada ulatus ja mõju ning juurpõhjus
   Analüüsi faas peab olema teostatud piisava põhjalikusega enne intsidendi käsitlemise järgmisse faasi minekut
+
+  Analüüsitakse süsteemi logid
+  Vajadusel seadistatakse logiserver või täiendatakse logianalüütikat ning suurendatakse logide detailsust
+
+Ohjeldamine
+  Juhtserverite IP aadresside, DNS nimede blokeerimine
+  Kommutaatorite portide välja lülitamine
+  Nakatunud seadmete võrgukaabli lahti ühendamine
+  Liikluse piiramine tulemüüriga
+  Liikluse kiiruse ja mahu piiramine
+  Seadme isoleerimine eraldi VLANi
+  Kasutajakontode paroolide vahetamine või kontode keelamine
+  Teenuste keelamine
+  Turvanõrkuste paikamine
+  Honeypotide ja Canarytokenite paigaldamine taristusse
+Ohjeldamise faasis on oluline arvestada intsidendi võimaliku mõju ning ulatusega. Ohjeldamise tegevused viiakse läbi vastavalt tajutavale riskitasemele. Ohjeldamise strateegia sõltub:
+  Võimalikust kahjust ning andmete varguse tõenäosusest
+  Vajadusest säilitada asitõendeid (süsteemi väljalülitamisel hävineb lendandmed RAMist)
+  Teenuse käideldavuse nõuetest
+  Strateegia rakendamise ajast
+  Strateegia rakendamise ulatusest (osaline ohjeldamine, täielik ohjeldamine)
+  Ohjeldamise tegevuse ajalisest mõjust (ajutised muutused, püsimuutused)
+
+Väljajuurimine ja taastamine
+  Pärast ohjeldusmeetmete rakendamist viiakse läbi tegevused ründaja süsteemidest väljaajamiseks
+  Enne taastamistegevuste lõpule viimist tuleb veenduda, et ründe juurpõhjus on välja selgitatud
+  Taastamine toimub lühikeses ja pikas perpektiivis- esmalt kriitilised süsteemid ning tagatakse turbetaseme kiire tõstmine ning äri talituspidevuse jätkumine; seejärel tegeletakse süsteemiarhidektuuri probleemidega
+  Konsulteeritakse äri talituspidevuse- ja taasteplaaniga ning viiakse neile vastavalt läbi taastetegevused
+  Pahavara eemaldamine süsteemidest
+  Parema viirusetõrje/EDRi paigaldus
+  Paroolide vahetus (sh kerberose kontod)
+  PAM lahenduse paigaldamine
+  Uute domeenikontrollerite paigaldamine
+  Andmete taastamine varundusest
+  
