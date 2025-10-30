@@ -2,17 +2,19 @@ Lingid:
   https://www.unifiedkillchain.com/assets/The-Unified-Kill-Chain.pdf
   https://attack.mitre.org/
   https://eits.ria.ee/et/versioon/2024/eits-poohidokumendid/etalonturbe-kataloog/der-avastamine-ja-reageerimine/der1-turvaintsidentide-avastamine/3-meetmed
+  https://eits.ria.ee/et/abimaterjalid/seletav-soonaraamat
   https://github.com/cyb3rfox/Aurora-Incident-Response
   https://github.com/swannman/ircapabilities
   https://www.vic.gov.au/sites/default/files/2024-10/Cyber-Security-Incident-Management-Plan.pdf (Enamasti overkill aga sealt saab spikerdada)
   https://learn.cisecurity.org/benchmarks
+  https://akit.cyber.ee/ (Leksikon)
 
 Andmete omadused
 CIA = Confidentiality (andmed on hoitud privaatsetena ja kaitstuna), Integrity (Andmed on kaitstud volitamata muutmise eest), Availability (Andmed on kättesaadavad neile kel ja kui vaja)
 Intsident = tõeline või arvatav, soovimatu või ootamatu, loomult kuridetelik või mitte, infoturvarike või sündmus või nende sari, mis võib kahjustada äritegevust või ähvardada teabe turvalisust. 
 Rünne = motivatsion (eesmärk) + meetod + nõrkus
 Oht = Soovimatu sündmuse võimalik esinemine, mis võib kahjustada organisatsiooni tegevust
-
+Oht + Nõrkus = Risk
 Näiteks:
   Süsteemi(de) nakatumine luna- või pahavaraga
   Süsteemi volitamata kasutamine
