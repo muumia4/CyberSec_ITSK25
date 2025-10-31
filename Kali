@@ -1,0 +1,15 @@
+pfSense eeldab, et esimeses adapteris on internet ja teises oma VLAN
+
+FIX https://github.com/kh4sh3i/CVE-2025-32463.git
+Vulnerable: sudo 1.9.14 to 1.9.17
+Patched: sudo 1.9.17p1 and later
+apt update && apt install sudo
+reboot
+
+NMAP / ZENMAP(visuaalne) on võrgu skännimiseks ja on väga lärmakas ning tõmbab täis võrgulogid (cisco healthcheck jääb seisma).
+Selle kasutamiseks on vaja võrgu omaniku luba kuna pole standard tarkvara.
+sudo nmap -sV -O 192.168.1.0/24
+
+Kui on väga vaja SSH-d väljast siis tee port knocking. Standard on VPN > ssh
+
+
