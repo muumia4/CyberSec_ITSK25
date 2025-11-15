@@ -32,3 +32,22 @@ Proovime rünnata kõige suurema tasuga ja kõige väiksema riskiga süsteemi (n
   use auxiliary/scanner/ssh/ssh_login
 
 Loo dokument kuidas fixida kõik kolm rünnakut
+
+0. Värskenda süsteemid viimaste turvauuendustega (seadista automaatsed uuendused kui on võimalik)
+1. Hoia süsteem lihtsana ja hallatavana. Väldi liigseid pluginaid. KISS (Keep it simple, stupid)
+2. Kasuta tulemüüri ning whitelisti nende portide jaoks mida reaalselt kasutad. Paigalda WAF (web application firewall)
+3. Kasuta default portide (ssh:22 näiteks) asemel mingit muud porti, et numbrist ei oleks kohe näha mis teenusega tegu
+4. Piira portidel liikluse kiirust
+5. Kasuta port knockingut
+6. Eralda teenused võrgu tasemel
+7. Blokeeri WhatWeb user-agent tulemüüris ja/või veebi serveri confis
+8. CAPTCHA võib aidata WhatWebi vastu
+9. Seadista (veebiserveri) logimine ja nende põhjal teavitused (mida keegi vaatab ka)
+10. Piira päringute kiirust
+11. Seadista veebiserver selliselt, et vea korral oleks ühtlane 404 vastus, et ei oleks erinevad lehed eristatavad
+12. Ära hoia veebiserveril faile mis ei peaks seal oleama
+13. Kasuta autentimist kus vähegi võimalik
+14. Keela veebirakendusel ära kasutajatel kaustapuu surfamise märkide kasutamine (/)
+15. Kasuta tugevaid paroole
+16. Kasuta MFAd
+17. Muuda sisse logimise veebilehe nime, et vältida automaatikat (index.php, wp-admin.php)
