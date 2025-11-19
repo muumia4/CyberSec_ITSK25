@@ -8,7 +8,8 @@ Lingid:
   https://www.vic.gov.au/sites/default/files/2024-10/Cyber-Security-Incident-Management-Plan.pdf (Enamasti overkill aga sealt saab spikerdada)
   https://learn.cisecurity.org/benchmarks
   https://akit.cyber.ee/ (Leksikon)
-
+  https://lolbas-project.github.io/   Living Off The Land Binaries, Scripts and Libraries
+  https://www.loldrivers.io/  Living Off The Land Drivers
 Andmete omadused
 CIA = Confidentiality (andmed on hoitud privaatsetena ja kaitstuna), Integrity (Andmed on kaitstud volitamata muutmise eest), Availability (Andmed on kättesaadavad neile kel ja kui vaja)
 Intsident = tõeline või arvatav, soovimatu või ootamatu, loomult kuridetelik või mitte, infoturvarike või sündmus või nende sari, mis võib kahjustada äritegevust või ähvardada teabe turvalisust. 
@@ -153,7 +154,7 @@ Meeskond
     Kommunikatsioonijuht
     Peronalijuht
 
-Analüüs
+nalüüs
   Analüüsi faasis kogutakse vajalikud asitõendid edasiseks lahendamiseks. Eesmärgiks on tuvastada ulatus ja mõju ning juurpõhjus
   Analüüsi faas peab olema teostatud piisava põhjalikusega enne intsidendi käsitlemise järgmisse faasi minekut
 
@@ -191,3 +192,24 @@ Väljajuurimine ja taastamine
   Uute domeenikontrollerite paigaldamine
   Andmete taastamine varundusest
   
+19.11.25
+Kodutöö!!!
+Pahavara kasutatakse enamasti ründe algul ja lõpus (ligipääsu saamine ja lunavara läiteks)
+SEO mürgitamine / malvertising = otsingumootori tulemuste muutmine
+Sihitud rünnakud = kliendispetsiifiline taristu
+Rünnakud tehakse enamasti pilveteenustelt ja kuna nende IPd on legitiimsed siis on blokeerida ja tuvastada väga raske või võimatu.
+Populaarsed ründevektorid on Powershell, CMD, WMI, CLR (Common language runtime).
+Failita pahavara süstib ennast otse mällu ja ei salvesta kettale midagi.
+Näiteks kood tõmmatakse powershelliga alla ja kompelleeritakse masinas otse mällu.
+Powershell without powershell ründed = Kuna powershell ei ole tegelikult exe vaid dll siis seda saab laadidu teistesse tarkvaradesse sisse
+Powershelli flage saab lühendada nii palju kuni see on ainuke valik (-NoP / -NoProfile)
+Failinimi ei võrdu rakendus. Ründajad nimetavad ümber süsteemi rakendussi kui ka kolmandate osapoolte rakendusi
+Protsessi sisemine = rakendus
+
+Esmareageerija põhimõtted
+Esmareageerija = Esimene inimene kes alustab intsidendiga tegelemist (IT spets, Sysadm), kindlustab sündmuspaiga ja tagab asitõendite puutumatuse
+Ära satu paanikasse
+Tegutse mõistlikult vastavalt olukorrale
+Kogu esmane info juhtunu kohta
+Juhtumi korral ära taaskäivita arvutit (krüpteerijad võivad mitu korda krüpteerida). Voolu välja tõmbamine võib aidata.
+Eemalda võrguliides
