@@ -10,6 +10,13 @@ Lingid:
   https://akit.cyber.ee/ (Leksikon)
   https://lolbas-project.github.io/   Living Off The Land Binaries, Scripts and Libraries
   https://www.loldrivers.io/  Living Off The Land Drivers
+  https://www.virustotal.com/gui/home/upload
+  https://opentip.kaspersky.com/
+  https://bazaar.abuse.ch/
+  https://urlscan.io/
+  https://otx.alienvault.com/
+  https://analyze.intezer.com/
+  
 Andmete omadused
 CIA = Confidentiality (andmed on hoitud privaatsetena ja kaitstuna), Integrity (Andmed on kaitstud volitamata muutmise eest), Availability (Andmed on kättesaadavad neile kel ja kui vaja)
 Intsident = tõeline või arvatav, soovimatu või ootamatu, loomult kuridetelik või mitte, infoturvarike või sündmus või nende sari, mis võib kahjustada äritegevust või ähvardada teabe turvalisust. 
@@ -210,6 +217,20 @@ Esmareageerija põhimõtted
 Esmareageerija = Esimene inimene kes alustab intsidendiga tegelemist (IT spets, Sysadm), kindlustab sündmuspaiga ja tagab asitõendite puutumatuse
 Ära satu paanikasse
 Tegutse mõistlikult vastavalt olukorrale
-Kogu esmane info juhtunu kohta
+Kogu esmane info juhtunu kohta (mis juhtus, mis tüüpi intsidendiga on tegu)
 Juhtumi korral ära taaskäivita arvutit (krüpteerijad võivad mitu korda krüpteerida). Voolu välja tõmbamine võib aidata.
-Eemalda võrguliides
+Kui on arvuti sees siis ära lülita välja, kui on väljas siis ära lülita sisse
+Väljalülitamisel juhe seinast välja
+Eemalda võrguliides, võrgukaabel
+Kellaaeg ja ajavöönd kirja
+Kui on vaja süsteemis midagi teha siis salvesta kõk tegevused (filmi ekraani, tee pilte)
+Vajadusel teavita infoturvet, juhtkonda
+
+Süsteemi analüüs
+Esimesena pane käima MagnetForensics Magnet Response
+FTK Imager teeb biti tasemel kettatõmmise (AFF või E0?)
+Redline (veidi aegunud)
+
+Kui pihta saanud masinaid on mitu on analüüs keerulisem
+Virustotalis tasub esimesena otsida räsi järgi kuna ründaja võib näha, et sa skanneerid tema viirust
+
