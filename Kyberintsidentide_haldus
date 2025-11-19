@@ -16,6 +16,13 @@ Lingid:
   https://urlscan.io/
   https://otx.alienvault.com/
   https://analyze.intezer.com/
+  https://github.com/WithSecureLabs/LinuxCatScale
+  https://www.kls-soft.com/wscc/
+  https://www.systeminformer.com/
+  https://www.winitor.com/download
+  https://www.kaspersky.com/downloads/free-virus-removal-tool
+  https://www.eset.com/us/download/tools-and-utilities/sysinspector/
+  https://eventlogxp.com/downloads/
   
 Andmete omadused
 CIA = Confidentiality (andmed on hoitud privaatsetena ja kaitstuna), Integrity (Andmed on kaitstud volitamata muutmise eest), Availability (Andmed on kättesaadavad neile kel ja kui vaja)
@@ -230,7 +237,16 @@ Süsteemi analüüs
 Esimesena pane käima MagnetForensics Magnet Response
 FTK Imager teeb biti tasemel kettatõmmise (AFF või E0?)
 Redline (veidi aegunud)
+Ära logi nakatunud masinasse priviligeeritud domeeni kontoga
+Me ei usalda ühtegi nakatumiskahtlusega masina tarkvara
+Kui logid kustutatud siis vaatame shadowcopyst või backupist
 
 Kui pihta saanud masinaid on mitu on analüüs keerulisem
 Virustotalis tasub esimesena otsida räsi järgi kuna ründaja võib näha, et sa skanneerid tema viirust
-
+Red Flags:
+  Enamus pahavara on 32bit
+  Stringis VBOX draiverid (pestudio)
+  Kahtlased Autorunnid (sysinternals Autoruns)
+  Puudulik cert
+  Puudulik firma nimi või mõni muu sarnane lahter
+  Event 1102
