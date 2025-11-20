@@ -23,7 +23,8 @@ Lingid:
   https://www.kaspersky.com/downloads/free-virus-removal-tool
   https://www.eset.com/us/download/tools-and-utilities/sysinspector/
   https://eventlogxp.com/downloads/
-  
+  https://github.com/jonathanbglass/cis-benchmarks
+  https://eits.raulwalter.com/    Eesti infoturbestandardi (E-ITS) rakendamise tööriist
 Andmete omadused
 CIA = Confidentiality (andmed on hoitud privaatsetena ja kaitstuna), Integrity (Andmed on kaitstud volitamata muutmise eest), Availability (Andmed on kättesaadavad neile kel ja kui vaja)
 Intsident = tõeline või arvatav, soovimatu või ootamatu, loomult kuridetelik või mitte, infoturvarike või sündmus või nende sari, mis võib kahjustada äritegevust või ähvardada teabe turvalisust. 
