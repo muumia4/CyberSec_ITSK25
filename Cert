@@ -1,0 +1,9 @@
+ISO 27001 - Infoturbe haldus süsteemide nõuded
+ISO 27002 - Infotruvameetmed
+  Segmenteeri - VLAN, VRF, Tsoonid
+  Piira ligipääsu - ACL, FW reeglid
+  Turva haldusvõrku - haldusvõrk, MFA
+  Krüpteeri - IPSec, TLS
+  Intsidentide tuvastamine - IDS, logid
+  Monitooring - Netflow, SNMP, SIEM
+  Wifi turvamine - 802.1x, WPA3
