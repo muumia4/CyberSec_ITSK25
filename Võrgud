@@ -5,7 +5,7 @@ Tools
 https://netboxlabs.com/docs/netbox/
 
 NSoT - Integratsioonid ja automaatika
-
+SASE - Secure Access Service Edge (SD-WAN + FWaaS + WAF + )
 L7. Application layer, DATA - Rakenduse (RDP, HTTP, Nextgen Tulemüür)
     Rakendused ja teenused, nende omavaheline suhtlus
     Lõppkasutaja teenused
@@ -106,4 +106,5 @@ Tehnoloogiad
     Dünaamiline liikluse ümberlülitus
     Rakenduspõhine marsuutimine
     Rakenduste ja linkide kvaliteedi mõõtmine (Latency, jitter, packet loss)
+
 
