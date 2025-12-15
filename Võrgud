@@ -1,0 +1,109 @@
+https://www.menti.com/ (kahooti laadne asi)
+https://www.gartner.com/en/research/magic-quadrant
+
+Tools
+https://netboxlabs.com/docs/netbox/
+
+NSoT - Integratsioonid ja automaatika
+
+L7. Application layer, DATA - Rakenduse (RDP, HTTP, Nextgen Tulemüür)
+    Rakendused ja teenused, nende omavaheline suhtlus
+    Lõppkasutaja teenused
+    Ohud: SQL/LDAP injection, XSS, DNS tunneling ja kõik muud ohud mida on rakendustel võimalik ära kasutada
+L6. Presentation layer, DATA - Esitluse (Nextgen Tulemüür)
+    Vormindab andmeid rakenduskohile edasiseks töötluseks
+    Krüpteering / dekrüpteerimine
+    Ohud: SSL stripping, Võltsitud sertifikaadid
+L5. Session layer, DATA - Sessiooni (Nextgen Tulemüür)
+    Rakendusprotsesside sessiooni loomine, sulgemine ja haldus
+    Sessioonide oleku jälgimine
+    Ohud: Session fixation / Cookie fixation, Session hijack, Replay ründed
+L4. Transport layer, SEGMENT - Transpordi (Nextgen Tulemüür)
+    Andmevoo juhtimine ja veatöötlus
+    TCP/UDP ühendused
+    Teenuste pordid
+    Ohud: Port scanning, SYN flood, TCP session hijacking
+L3. Network layer, PACKET DATAGRAM - Võrgu (Tulemüür)
+    Loogiline adresseerimine (IP aadressid)
+    Parima marsuudi leidmine sihtvõrku
+    Pakettide edastamine ruuterite vahel
+    Võrguühenduste loogiline eraldamine
+    Ohud: IP spoofing, ICMP abuse (Ping sweeps, OS fingerprinting, ICMP tunneling, DoS), Rogue DHCP server
+L2. Data link layer, FRAME -Lüli (VLAN, )
+    Kodeerib bitid pakettideks ja dekodeerib pakette
+    Ohud: ARP spoofing, MAC flooding, Rogue DHCP server
+L1. Physical layer, BIT, SYMBOL - Füüsiline (Seadmed, Kaablid, Valgus, Raadiosignaalid, Single ja multimode ühendus, Sateliitside)
+    Ohud: Tundmatud seadmed, Raadiosignaalide segamine
+
+NextGen Tulemüür - Võimaline filtreerima ja analüüsima sisu rakenduskihis ning vaatama pakettide sisse (Paloalto, Fortigate)
+Subnet (Alamvõrk) - Broadcast domeen Layer 2 peal (VLAN)
+ARP - IP ja MAC vaheline tõlk (nagu DNS)
+
+Sissetungituvastus süsteemi (IDS) sensorid
+Sissetungitõrje süsteem (IPS)
+
+Mida (saab) teha?
+Kommutaator (Switch)
+  802.1x - Pordi autentimine (parim basic meede)
+  MAC aadresside arvu piiramine pordil
+  Rogue switchide blokeerimine (BPDU guard)
+  DHCP snooping
+  ARP pette rünnakud
+  IP Source guard
+  Spanning Tree rünnakud
+  Broadcast ja multicast stormid
+  CDP ja LLDP tuvastus protokollid
+
+Marsruuter (Router)
+  Pääsuloend (ACL)
+  Ruutinguprotokolli tugevdamine
+  VRF - virtual routing forvarding
+  Haldustasandi eraldamine
+
+Tulemüür
+  Olekufiltriga müürimine (stateful)
+  Tsoonipõhised müürireeglid 
+  IDS ja IPS reeglistikud
+  Pakettide süvakontroll (DPI)
+  URL filtering
+  Geo-IP põhised filtreeringud
+  Rakendustasemel rünnakute tõkestamine (L7)
+
+Pääsupunkt (Access Point)
+  802.1x
+  WPA2 ja WPA3
+  Rogue AP tuvastus
+  AP-de füüsiline turve
+
+Nähtavus
+  Logid = seadmete, tulemüürireeglid, konfiguratsioonimuudatused jne
+  Ajasünkroniseerimine
+  NetFlow, Võrgukraan (TAP), ja portide peegeldamine (SPAN, RSPAN)
+
+Tehnoloogiad
+  Segmenteerimine
+    VLANid
+    intra-VLAN liiklus
+    ACLid (North-South)
+    VRFid
+    Tsoonipõhine eraldus
+    Mikrosegmenteerimine (East-West)w
+  Ligipääsukontroll
+    Autentimine vs Autoriseerimine
+    802.1x
+    Identiteedipõhised ligipääsud
+    Haldustegevuse tsentraalne autentimine RADIUS / TACACS+
+    Haldusliikluse eraldamine
+  VPN tüübid
+    Site to Site
+    Hub and spoke
+    Full mesh
+    Dynamic multipoint
+    Remote Access
+  SD-WAN Programmeeritav laivõrk
+    Tarkvarapõhine WAN liikluse juhtimine
+    Mitmete ühenduste kasutamine (MPLS, internet, mobiilandmeside, sateliitside)
+    Dünaamiline liikluse ümberlülitus
+    Rakenduspõhine marsuutimine
+    Rakenduste ja linkide kvaliteedi mõõtmine (Latency, jitter, packet loss)
+
