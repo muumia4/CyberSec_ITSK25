@@ -71,3 +71,6 @@ sudo reaver --bssid E8:DE:27:B0:66:72 --channel 11 --interface wlan0mon -vvv -no
 sudo airmon-ng stop wlan0mon (enable station mode, disable monitor mode)
 sudo service NetworkManager restart (taasta võrguteenus)
 
+ARP - Address Resolution Protocol
+
+
