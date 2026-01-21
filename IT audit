@@ -1,0 +1,101 @@
+AUDIT
+Juhtkonna töövahend
+  Mõõdab Riski
+  Kinnitab vastavust standardile või seadusest tulenevale kohustusele
+Audit mõõdab midagi vastavalt standardile
+  Standard võib olla nii org sisene kui ka väline
+Hindamine ehk kuidas saaks midagi parendada
+
+Tüübid:
+IT audit
+IT juhtimise protsessid
+  Kas IT juhtimine vastab standardile või parmiatele praktikatele (ITIL)
+    Muudatuste haldus, konf haldus, IT eelarvestamine
+Küberturbeaudit
+  Kas küberturve on vastavuses organisatsiooni riskinormiga
+Väga hea viis kulutuste põhjendamiseks
+
+Meetmete kontroll:
+  Funktsioon
+    Ennetavad
+    Tuvastavad
+    Taastavad (backupid, conf haludse, dokumentatsioon)
+Rakendusviis:
+  Administratiivsed (Poliitikad, korrad, protsessid)
+  Tehnilised (turvapoliitikad, seadistused, tehnilised lahendused)
+  Füüsilised (tulekustuid, lukus uksed, aed)
+
+Audit - vastavus standardile
+  Org isesed korrad ja protseduurid
+    Infoturbepoliitikad, infosüsteemide eeskiri, talituspidevuse plaan vms
+  Parimad praktikad
+    ITIL, COBIT
+  Mõõtlusalused
+    CIS (Mõtekas kontrollida tarkvaraga nagu wazhuu vms)
+    ASD (inimlikum, parem juurutamisel)
+    CCM
+
+Standardid
+  E-ITS
+  ISO 27001 / 27002
+  PCI v4
+
+Auditi eetika
+  Audiitor
+    Erapooletu
+    Usaldusväärne
+    Korrektne
+    Professionaalne skeptik
+    Konfidentsiaalsuskohustus
+    Pädev
+    Hea suhtleja
+    Iseõppija
+  Audit
+    Skoobi piires
+    Tõenditel põhinev
+    Metoodiliselt korrektne
+  Auditi eetika ja kõrgete professionaalsete standardite eiramine viib ebaõnnestunud auditini
+    Organisatsioon raiskab raha
+    Org ei saa tulemustest aru
+    Välditav risk realiseerub
+    Audiitor häirib ettevõtte talituspidevust
+
+Auditi sisu:
+Kas on toimunud midagi kahtlast?
+Mis on juhtunud?
+Millal intsident alguse sai?
+Millal intsident lõppes?
+
+Auditiks valmistumine
+  Mõista auditi eesmärki ja skoopi
+  Ole valmis avaldama oma arvamust auditi kohta
+  Ole valmis esitama vajaliku dokumentatsiooni
+  Ole valmis ausalt vastama audiitori küsimustele
+  Edasta auditit puudutav informatsioon ainult läbi turvaliste kanalite
+
+Auditi protsess
+  Taustainfo kogumine
+    Org poliitikad, korrad
+    Dokumentatsioon
+  Avakoosolek (vajadusel)
+    Võtmeisikud
+    Org juhtkonna esindaja
+    Tehnilised inimesed, keda audit puudutab
+  Auditi protsessi ülevaade ja auditi metoodika tutvustus
+  Struktrueeritud intervjuud
+    Vastavalt kontrollnimekirjale
+  Auditi valim ehk milliseid süsteeme ja kui palju kontrollime
+    Valim peab olema representatiivne
+    Juhuvalim, kliendi antud valim
+  Dokumentatsiooni analüüs
+  Võrgu- ja arhidektuuriskeemide analüüs
+  Intervjuu küsimustiku kontroll
+
+  Juurdepääsude küsimine
+  Agentide ja töövahendite paigaldus
+  Tehnilised kontrollid ja süsteemide skaneerimine
+  Asitõendite kogumine
+  Tehnoloogiad ja automatiseerimine
+    Turvanõrkuste skännerid
+    SCAP skännerid (DOD SCAP (https://www.cyber.mil/stigs/SCAP/), OpenSCAP)
+    Skriptid
