@@ -1,14 +1,16 @@
 Hiren's Boot CD  https://www.hirensbootcd.org/download/ (ISO olemas virtukas)
   Recuva (Info taastamine)
-  
-Sysinternals
-  Autoruns
-  Autologon
-  Not My Fault (Crash resu)
-  PortMon
-  ProcMon
-  RAMMap (File Summmary hea, et näha mälu kasutust)
-  TCPView (Viirused enamasti kasutavad UDPdv6)
+
+Microsoft
+  ADAC (näeb varjatud kasutajaid)
+  Sysinternals
+    Autoruns
+    Autologon
+    Not My Fault (Crash resu)
+    PortMon
+    ProcMon
+    RAMMap (File Summmary hea, et näha mälu kasutust)
+    TCPView (Viirused enamasti kasutavad UDPdv6)
   
 impacket-wmiexec (Hashiga sisse logimine)
 Mimikatz (RAM dump)
