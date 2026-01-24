@@ -30,3 +30,12 @@ winget install -e --id Python.Python.3.11
 #7-zip
 winget install -e --id 7zip.7zip
 ```
+
+Kali PW reset
+```
+1. Boot
+2. GRUB menüüs vajuta e
+3. linux real Asenda splash, guiet ja ro sellega rw init=/bin/bash
+4. nano /etc/shadow - siit leian kontod
+5. passwd kasutajanimi
+```
