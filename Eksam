@@ -33,5 +33,10 @@ Tools
     Shared folders
       Kas on midagi välja jagatud ($ näitab, et vajalik domeeni adm)
     Windows server backup
+    Disk Management
+      Kas on peidetud partitisioone?
+  GPO
+    Default Domains policy. Mis seal toimub?
+      Computer > Windows > Security > ...
     
       
