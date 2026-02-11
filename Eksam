@@ -15,8 +15,8 @@ Vaata local server
   uuendused?
   Defender real time protection?
     Kas on peal? Kas on asendus?
-  Remote mgmt?
-  Reomte desktop?
+  Remote mgmt peal?
+  Reomte desktop lubatud?
     Kas Network Level Auth on valitud?
     Mis kasutajatel on luba?
       Kas listatud grupis on lubatud kasutajad?
@@ -30,6 +30,7 @@ Tools
     Event Viewer
       Kas subscription seadistatud kui pole just eraldi tarkvara (nxlog, graylog, monit jne)?
         Subsription avab remote managementi pordid (5985 ja 5986)
+      Kas GPOd on rakendunud 
     Shared folders
       Kas on midagi välja jagatud ($ näitab, et vajalik domeeni adm)
     Windows server backup
@@ -37,6 +38,15 @@ Tools
       Kas on peidetud partitisioone?
   GPO
     Default Domains policy. Mis seal toimub?
-      Computer > Windows > Security > ...
-    
-      
+      Computer > Policies > Windows Settings > Security Settings > ...
+        Restrict NTLM: Audit for all accounts
+        Restrict NTLM: Incoming Deny all
+        Restrict NTLM: Auth Deny all
+      Local Policies
+        Accounts: Block Microsoft accounts
+      Administrative templates
+        Data collection and preview build
+          Allow Diagnostic data
+          HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection
+            AllowTelemetry DWORD32bit 0
+
