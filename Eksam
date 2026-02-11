@@ -1,0 +1,37 @@
+Eksamis on arvatavasti valesti konfitud asju
+Kell õige?
+
+Logimine
+https://eits.ria.ee/et/versioon/2024/eits-poohidokumendid/etalonturbe-kataloog/ops-kaeidutoeoed/ops1-oma-kaeidutoeoed/ops11-itpoohitoeoed/ops115-logimine/3-meetmed
+
+Tutvuda kindlasti
+SYS.2.2.3: Windows 10 ja Windows 11
+SYS.1.3: Linuxi ja Unixi server
+SYS.1.2.3: Windows Server
+APP.2: Kataloogiteenused
+APP.3: Võrguteenused
+
+Vaata local server
+  uuendused?
+  Defender real time protection?
+    Kas on peal? Kas on asendus?
+  Remote mgmt?
+  Reomte desktop?
+    Kas Network Level Auth on valitud?
+    Mis kasutajatel on luba?
+      Kas listatud grupis on lubatud kasutajad?
+  Timezone / kellaaeg õige?
+
+Tools
+  Computer management
+    Task Scheduler
+      Disable all running tasks testimiseks
+      Tööriist?
+    Event Viewer
+      Kas subscription seadistatud kui pole just eraldi tarkvara (nxlog, graylog, monit jne)?
+        Subsription avab remote managementi pordid (5985 ja 5986)
+    Shared folders
+      Kas on midagi välja jagatud ($ näitab, et vajalik domeeni adm)
+    Windows server backup
+    
+      
