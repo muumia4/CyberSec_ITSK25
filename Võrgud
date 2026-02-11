@@ -1,6 +1,8 @@
 FF02 on ipv6 sisevõrgu aadress
 2000 ja 2001 on probleem kuna karjub välisvõrku
 
+ipv6 toetab 4096 VLANi
+
 NSoT - Integratsioonid ja automaatika
 SASE - Secure Access Service Edge (SD-WAN + FWaaS + WAF + )
 L7. Application layer, DATA - Rakenduse (RDP, HTTP, Nextgen Tulemüür)
