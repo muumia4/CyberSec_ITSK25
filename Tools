@@ -19,6 +19,8 @@ Mimikatz (RAM dump)
 NMAP (Võrgu scan)
 Hydra (Bruteforcer)
 crackmapexec ()
+sudo netdiscover -r 192.168.1.0/24 (vaiksem kui nmap)
+nmap (vältimiseks on hea kasutada kõrgemaid porte kui 10 000)
 
 Hybrid-Analysis.com
 
