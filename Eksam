@@ -1,3 +1,8 @@
+!(ip.geoip.dst_org == "MICROSOFT-CORP-MSN-AS-BLOCK") filtreeri wiresharkis välja Microsofti paketid
+!(nbs) && !(llmnr) && !(kerberos) && !(svcctl) && !(msrpc) filtreeri välja kerberose paketid
+
+!(ip.geoip.dst_org == "MICROSOFT-CORP-MSN-AS-BLOCK") && !(nbs) && !(llmnr) && !(kerberos) && !(svcctl) && !(msrpc)
+
 Eksamis on arvatavasti valesti konfitud asju
 Kell õige?
 
