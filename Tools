@@ -24,6 +24,27 @@ nmap (vältimiseks on hea kasutada kõrgemaid porte kui 10 000)
 
 Hybrid-Analysis.com
 
+testphp.vulnweb.com
+
+Miinimum domeeni nõuded
+  TCP 49152-65535 (Randomly allocated high TCP ports)
+  TCP 88 (Kerberos Key Distribution Center)
+  TCP 135 (Remote Procedure Call)
+  TCP 139 (NetBIOS Session Service)
+  TCP 389 (LDAP)
+  TCP 445 (SMB, Net Logon)
+  UDP 53 (DNS, Peab vastama enne kui TCP)
+  UDP 389 (LDAP, DC Locator, Net Logon)
+Reccommended domeeni nõuded
+  UDP 123 (NTP)
+  TCP 53 (DNS)
+  TCP 464 (Kerberos Password V5 - Kasutatakse parooli vahetuseks töölaualt)
+  UDP 137 (NetBIOS Name Resolution)
+  UDP 138 (NetBIOS Datagram Service)
+  TCP 636 (LDAP SSL)
+  UDP 636 (LDAP SSL)
+  TCP 3268 (Global Catalog)
+
 Learning platforms
 https://www.offsec.com 
 https://www.hackthebox.com/
