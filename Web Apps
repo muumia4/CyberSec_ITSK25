@@ -12,7 +12,7 @@ Kuvab kõik kasutajad ja paroolid
   SELECT * FROM users WHERE username = '$USER' AND PASSWORD = '$PASSWORD';
 XSS (Cross site scripting)
 <script>
-document.body.style.setProperty("backround-color","black","important");
+document.body.style.setProperty("background-color","black","important");
 document.body.style.setProperty("color","#00FF00","important");
 alert("süsteemis kala sees");
 </script>
