@@ -3,6 +3,15 @@
 
 !(ip.geoip.dst_org == "MICROSOFT-CORP-MSN-AS-BLOCK") && !(nbs) && !(llmnr) && !(kerberos) && !(svcctl) && !(msrpc)
 
+Tuvasta masinas olevad kasutajad.
+Mis grupid on?
+Kuidas on nende parooli poliitika? Kas on üldse parool?
+Mida on välja jagatud?
+Mis teenused jooksevad?
+Task scheduler?
+Võrguskänn? Dir search?
+
+
 Eksamis on arvatavasti valesti konfitud asju
 Kell õige?
 
