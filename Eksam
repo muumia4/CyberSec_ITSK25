@@ -1,7 +1,10 @@
-!(ip.geoip.dst_org == "MICROSOFT-CORP-MSN-AS-BLOCK") filtreeri wiresharkis välja Microsofti paketid
-!(nbs) && !(llmnr) && !(kerberos) && !(svcctl) && !(msrpc) filtreeri välja kerberose paketid
+https://www.kutseregister.ee/ctrl/et/Standardid/vaata/11202865
 
-!(ip.geoip.dst_org == "MICROSOFT-CORP-MSN-AS-BLOCK") && !(nbs) && !(llmnr) && !(kerberos) && !(svcctl) && !(msrpc)
+Wireshark
+  !(ip.geoip.dst_org == "MICROSOFT-CORP-MSN-AS-BLOCK") filtreeri wiresharkis välja Microsofti paketid
+  !(nbs) && !(llmnr) && !(kerberos) && !(svcctl) && !(msrpc) filtreeri välja kerberose paketid
+
+  !(ip.geoip.dst_org == "MICROSOFT-CORP-MSN-AS-BLOCK") && !(nbs) && !(llmnr) && !(kerberos) && !(svcctl) && !(msrpc)
 
 Tuvasta masinas olevad kasutajad.
 Mis grupid on?
