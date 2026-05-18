@@ -84,3 +84,11 @@ Tools
             AllowTelemetry DWORD32bit 0
 Microsoft Security Compliance Toolkit 1.0
   https://www.microsoft.com/en-us/download/details.aspx?id=55319&msockid=041733cf361d61451766249237d16099 
+Hayabusa
+  https://github.com/Yamato-Security/hayabusa
+Timeline Explorer
+  https://download.ericzimmermanstools.com/net9/TimelineExplorer.zip
+Nessus
+  https://www.tenable.com/downloads/nessus?loginAttempted=true
+WinPEAS
+  https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS
