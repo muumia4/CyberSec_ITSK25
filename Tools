@@ -26,7 +26,7 @@ Hybrid-Analysis.com
 
 testphp.vulnweb.com
 
-Miinimum domeeni nõuded
+Miinimum domeeni nõuded, et saaks domeeni püsti
   TCP 49152-65535 (Randomly allocated high TCP ports)
   TCP 88 (Kerberos Key Distribution Center)
   TCP 135 (Remote Procedure Call)
