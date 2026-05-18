@@ -53,6 +53,8 @@ Indikaatorid mis viitavad, et intsident on toimunud või toimumas
 Logimine
 https://eits.ria.ee/et/versioon/2024/eits-poohidokumendid/etalonturbe-kataloog/ops-kaeidutoeoed/ops1-oma-kaeidutoeoed/ops11-itpoohitoeoed/ops115-logimine/3-meetmed
 
+
+
 Tools
   Computer management
     Task Scheduler
@@ -80,4 +82,5 @@ Tools
           Allow Diagnostic data
           HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection
             AllowTelemetry DWORD32bit 0
-
+Microsoft Security Compliance Toolkit 1.0
+  https://www.microsoft.com/en-us/download/details.aspx?id=55319&msockid=041733cf361d61451766249237d16099 
